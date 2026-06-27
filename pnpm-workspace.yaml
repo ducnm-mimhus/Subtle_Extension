@@ -1,0 +1,10 @@
+onlyBuiltDependencies:
+  - esbuild
+  - protobufjs
+  - sharp
+
+allowBuilds:
+  esbuild: true
+  onnxruntime-node: false
+  protobufjs: true
+  sharp: true

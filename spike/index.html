@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Subtle — Spike GĐ0</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 16px; }
+      h1 { margin-bottom: 8px; }
+      .controls { display: flex; gap: 8px; margin: 16px 0; }
+      button { padding: 8px 16px; cursor: pointer; }
+      #log { background: #111; color: #0f0; font-family: monospace; font-size: 13px;
+             padding: 12px; border-radius: 6px; height: 300px; overflow-y: auto; white-space: pre-wrap; }
+      #result { margin-top: 12px; padding: 12px; background: #f0f0f0; border-radius: 6px; min-height: 60px; }
+    </style>
+  </head>
+  <body>
+    <h1>Subtle — Spike GĐ0</h1>
+    <p>Test Whisper STT + NLLB translation, đo latency trên máy thật.</p>
+
+    <div class="controls">
+      <input type="file" id="audio-file" accept="audio/*" />
+      <button id="btn-run">Chạy pipeline</button>
+    </div>
+
+    <div id="log">Chờ input…</div>
+    <div id="result"></div>
+
+    <script type="module" src="./spike.ts"></script>
+  </body>
+</html>
